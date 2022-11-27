@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow: visible">
+<div id="root">
+    <div class="app">
+        <div class="main">
+            <div class="content">
+                <div class="bd">
+                    <div class="bg">
+                        <div class="wrap">
+                            <div class="hashListBlock">
+                                <div class="hashListWrap" style="margin-bottom: 1rem">
+                                    <ul class="hashTitle clearfix">
+                                        <li><span>BLOCK</span></li>
+                                        <li><span>HASH</span></li>
+                                        <li><span>RESULT</span></li>
+                                        <li><span>TIME</span></li>
+                                    </ul>
+                                    <div class="hashBg"></div>
+                                    <div class="hashContainer"></div>
+                                </div>
+                            </div>
+                            <div class="space">
+                                <span></span>
+                            </div>
+                            <div class="block">
+                                <div class="blockWrap">
+                                    <div class="clearfix">
+                                        <div class="detail">
+                                            <div class="detailTitle">
+                                                <span>BET AMOUNT</span>
+                                            </div>
+                                            <div class="detailContent">
+                                                <div class="detailIcon">
+                                                    <i class="iconSymbol"></i>
+                                                </div>
+                                                <input class="amountInput" type="number" min="0" value="0.1">
+                                                <div class="detailAction">
+                                                    <a href="#">1/2</a>
+                                                    <a href="#">2X</a>
+                                                    <a href="#">MAX</a>
+                                                </div>
+                                                <div class="detailUnit">ETH</div>
+                                            </div>
+                                        </div>
+                                        <div class="detail">
+                                            <div class="detailTitle">
+                                                <span>PAYOUT ON WIN</span>
+                                            </div>
+                                            <div class="detailContent">
+                                                <div class="detailIcon">
+                                                    <i class="iconSymbol"></i>
+                                                </div>
+                                                <div class="detailAmount">0.2002</div>
+                                                <div class="detailUnit">ETH</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <div class="infoItem">
+                                            <div class="infoItemTitle">
+                                                <span>ROLL UNDER TO WIN</span>
+                                                <div class="infoItemAction">
+                                                    <strong class="infoItemNumber" id="infoNumber"></strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="infoItem">
+                                            <div class="infoItemTitle">
+                                                <span>PAYOUT</span>
+                                            </div>
+                                            <strong class="infoItemNumber" id="payout"></strong>
+                                        </div>
+                                        <div class="infoItem">
+                                            <div class="infoItemTitle">
+                                                <span>WIN CHANGE</span>
+                                            </div>
+                                            <strong class="infoItemNumber" id="change"></strong>
+                                        </div>
+                                    </div>
+                                    <div class="slideContainer">
+                                        <input type="range" id="myRange" min="1" max="98" class="slider" value="50">
+                                        <div class="slider-value-wrap">
+                                            <div class="slider-value">
+                                                <span id="value"></span>
+                                            </div>
+                                            <div class="sliderTable">
+                                                <div>1</div>
+                                                <div>&nbsp;</div>
+                                                <div>&nbsp;</div>
+                                                <div>100</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="betBottom clearfix">
+                                        <a href="#" class="rollBtn" id="rollBtn">
+                                            <span>ROLL</span>
+                                        </a>
+                                        <div class="betBottom">
+                                            <a href="#" class="wallet" onclick="" id="wallet">
+                                                <span>Wallet Connection</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+<script src="wallet.js"></script>
+
+</html>

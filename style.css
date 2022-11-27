@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100vh;
+
+}
+
+.app {
+    min-height: 100vh;
+    background:url("bg.jpg");
+}
+
+
+.content {
+    position: relative;
+    z-index: 0;
+    flex-grow: 1;
+    width: 100%;
+    min-width: 0;
+    min-height: 100%;
+}
+
+.main {
+    display: flex;
+    min-height: calc(100vh - 77px);
+}
+
+.bd {
+    height: calc(100% - 230px);
+}
+
+.bg {
+
+}
+
+.wrap {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.slideContainer {
+    width: 680px;
+    margin: 5px auto 0;
+}
+
+.space {
+    width: 680px;
+    height: 20px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(90deg, rgb(0, 243, 142) 50%, rgb(255, 0, 0) 50%);
+    outline: none;
+    opacity: .7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    border-radius: 12px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: #00f39a;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #00f39a;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slider-value span {
+    color: white;
+    padding: 20px 335px;
+
+}
+
+.slider-value-wrap {
+    padding-top: 20px
+}
+
+.info {
+    margin-top: 5px;
+    border-radius: 6px;
+    background-color: #191919;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.infoItem {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    width: 33.33333%;
+}
+
+.infoItemTitle {
+    color: #605c6e;
+    font-size: 12px;
+    padding-top: 5px;
+    display: block;
+}
+
+.infoItemAction {
+    position: relative;
+}
+
+.infoItemNumber {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.betBottom {
+    position: relative;
+    width: 680px;
+    margin: 20px auto 0;
+}
+
+.rollBtnActive{
+    background-color: #ffe000;
+    color: #191919;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+}
+
+.rollBtn {
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    background-color: #262626;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0
+}
+
+.clearfix::after {
+    clear: both;
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.detail {
+    width: 350px;
+    float: left;
+    display: inline;
+}
+
+.detail:last-of-type {
+    float: right;
+    width: 315px;
+}
+
+.detailTitle {
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.detailContent {
+    background-color: #191919;
+    border-radius: 6px;
+    height: 32px;
+    overflow: hidden;
+}
+
+.detailIcon {
+    float: left;
+    display: inline;
+    margin-left: 15px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.detailIcon i {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin-top: 4px;
+}
+
+.iconSymbol {
+    background-image: url(ethereum.png);
+    background-size: contain;
+}
+.detailAmount,
+.amountInput {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: 100px;
+    float: left;
+    display: inline;
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.detailAction{
+    float: right;
+    display: inline;
+    height: 32px;
+    background-color: #3a3844;
+    padding: 0 6px
+}
+.detailAction a{
+    float: left;
+    display: inline;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 6px 2px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 8px;
+    transition: none;
+    text-decoration: none;
+}
+.detailUnit{
+    float: right;
+    display: inline;
+    color: #605c6e;
+    font-size: 14px;
+    line-height: 32px;
+    margin-right: 15px;
+}
+
+.hashListBlock {
+    border-radius: 0;
+    background-color: rgba(25, 25, 25, .5);
+    margin-bottom: 10px;
+    position: relative;
+    min-height: 290px;
+    padding-top: 35px;
+}
+
+.hashListWrap {
+    position: relative;
+    z-index: 1;
+}
+.hashTitle{
+    width: 680px;
+    margin: 0 auto;
+}
+.blockWrap {
+    position: relative;
+    width: 680px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.sliderTable {
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #fff;
+    padding-top: 5px
+}
+.hashTitle li{
+    float: left;
+    display: inline;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.hashTitle li:first-of-type {
+    width: 110px;
+}
+
+.hashTitle li:nth-of-type(2) {
+    width: 410px;
+}
+
+.hashTitle li:nth-of-type(3) {
+    width: 50px;
+}
+.hashTitle li:nth-of-type(4) {
+    width: 110px;
+}
+
+.hashContainer{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    height: 170px;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.hashBg{
+    width: 680px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #191919;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 255, 187, 0.4);
+    padding: 5px;
+}
+
+.sliderTable div {
+    float: left;
+    display: inline;
+    width: 25%;
+}
+
+.sliderTable div:last-of-type {
+    text-align: right;
+}
+
+.wallet{
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 159px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    background-color: #732424;
+    color: #fff;
+}
+
+.wall{
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+    width: 159px;
+    height: 50px;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    background-color: #262626;
+    color: #fff;
+    cursor: not-allowed;
+}
