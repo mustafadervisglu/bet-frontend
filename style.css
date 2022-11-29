@@ -318,6 +318,7 @@ a {
     color: #fff;
     padding-top: 5px
 }
+.hashContainer li,
 .hashTitle li{
     float: left;
     display: inline;
@@ -328,6 +329,7 @@ a {
     color: #fff;
 }
 
+
 .hashTitle li:first-of-type {
     width: 110px;
 }
@@ -336,11 +338,19 @@ a {
     width: 410px;
 }
 
+
 .hashTitle li:nth-of-type(3) {
     width: 50px;
 }
 .hashTitle li:nth-of-type(4) {
     width: 110px;
+}
+
+.items {
+    color: cornsilk;
+    width: 70%;
+    left: -20px;
+    border: 1px solid gray;
 }
 
 .hashContainer{
@@ -404,4 +414,20 @@ a {
     background-color: #262626;
     color: #fff;
     cursor: not-allowed;
+}
+
+.group-item{
+    display: block;
+}
+.hashItem{
+    z-index: 1;
+    width: 680px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hashContainer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

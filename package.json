@@ -2,5 +2,9 @@
   "name": "bet-frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "web3": "^1.8.1"
+  }
 }

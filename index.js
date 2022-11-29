@@ -4,6 +4,8 @@ const output = document.getElementById("value");
 const infoNumber = document.getElementById("infoNumber");
 const payout = document.getElementById("payout");
 const change = document.getElementById("change");
+const winAmountOutput = document.getElementById("detailAmount");
+const betAmount = document.getElementById("amountInput")
 
 
 
@@ -13,17 +15,20 @@ output.innerHTML = slider.value;
 infoNumber.innerHTML = slider.value;
 change.innerHTML = slider.value + "%";
 payout.innerHTML = String((98.1 / slider.value).toFixed(3)) + "x";
+winAmountOutput.innerHTML = String((98.1 / slider.value).toFixed(3) * betAmount.value )
 
 slider.oninput = function () {
 
     output.innerHTML = slider.value;
     infoNumber.innerHTML = slider.value;
     change.innerHTML = slider.value + "%";
+    winAmountOutput.innerHTML = String((98.1 / slider.value).toFixed(3) * betAmount.value )
 
     if (slider.value === "1") {
         payout.innerHTML = String((98.1 / slider.value)) + "x";
     } else {
         payout.innerHTML = String((98.1 / slider.value).toFixed(3)) + "x";
+
     }
 
 
